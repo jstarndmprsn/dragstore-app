@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service · DragStore</title>
+  <style>
+    :root {
+      --bg: #e7e7ea;
+      --card: #ffffff;
+      --text: #1f2230;
+      --muted: #5b5f70;
+      --accent: #6366f1;
+      --border: #e2e2e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; margin-bottom: 28px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand .logo { width: 38px; height: 38px; border-radius: 10px; object-fit: contain; display: block; }
+    .brand .titles { line-height: 1.15; }
+    .brand .titles .app { font-weight: 700; font-size: 18px; }
+    .brand .titles .sub { font-size: 13px; color: var(--muted); }
+    .lang { display: inline-flex; background: #d9d9df; border-radius: 999px; padding: 3px; }
+    .lang button {
+      border: 0; background: transparent; color: var(--muted);
+      font: inherit; font-size: 13px; font-weight: 600;
+      padding: 5px 14px; border-radius: 999px; cursor: pointer;
+    }
+    .lang button.active { background: #fff; color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 36px 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    h1 { font-size: 26px; margin: 0 0 6px; }
+    .updated { color: var(--muted); font-size: 13px; margin: 0 0 26px; }
+    h2 { font-size: 17px; margin: 30px 0 8px; }
+    p, li { color: #303446; font-size: 15px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    .footer-nav { text-align: center; margin-top: 18px; font-size: 13px; color: var(--muted); }
+    .footer-nav a { margin: 0 6px; }
+    @media (max-width: 560px) { .card { padding: 26px 20px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img class="logo" src="icon.png" alt="DragStore" />
+        <div class="titles">
+          <div class="app">DragStore</div>
+          <div class="sub" data-en="Terms of Service" data-de="Nutzungsbedingungen">Terms of Service</div>
+        </div>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button id="btn-de" onclick="setLang('de')">DE</button>
+      </div>
+    </header>
+
+    <main class="card">
+
+      <!-- ============ ENGLISH ============ -->
+      <section id="content-en">
+        <h1>Terms of Service</h1>
+        <p class="updated">Last updated: 20 June 2026</p>
+
+        <p>These Terms of Service (“Terms”) govern your use of DragStore (“the App”), a free native
+        macOS application provided by <strong>Jakob Weczerek</strong> (“the Developer”). By
+        downloading, installing, or using the App, you agree to these Terms. If you do not agree,
+        do not use the App.</p>
+
+        <h2>1. The service</h2>
+        <p>DragStore is a free local macOS menu bar utility for accessing and managing files in your
+        Google Drive (limited to files and folders you explicitly grant access to) or in a local
+        Finder folder. The App runs entirely on your device and communicates directly with Google’s
+        APIs; the Developer operates no servers and receives none of your data.</p>
+
+        <h2>2. Google account and acceptable use</h2>
+        <p>For the Google Drive features you connect your own Google account. You agree to use the
+        App only with accounts and data you are authorized to access, to comply with Google’s terms
+        and applicable law, and not to use the App for any unlawful or abusive purpose. Your use of
+        Google services through the App is also subject to Google’s own terms and policies.</p>
+
+        <h2>3. Your data</h2>
+        <p>You retain all rights to your files and data. The App acts solely as a local tool that
+        performs the actions you request. The Developer does not access, store, or control your
+        data. See the <a href="index.html">Privacy Policy</a> for details.</p>
+
+        <h2>4. No warranty</h2>
+        <p>The App is provided “as is” and “as available”, without warranties of any kind. The
+        Developer does not warrant that the App will be uninterrupted or error-free or that file
+        operations will always succeed. Mandatory statutory rights remain unaffected.</p>
+
+        <h2>5. Limitation of liability</h2>
+        <p>The Developer is liable without limitation for intent and gross negligence, under the
+        Product Liability Act, and for injury to life, body, or health. In cases of slight
+        negligence the Developer is liable only for the breach of an essential contractual
+        obligation, limited to the foreseeable, typical damage. Any further liability is excluded.
+        You are responsible for keeping your own backups of important data.</p>
+
+        <h2>6. Changes</h2>
+        <p>The Developer may modify or discontinue the App and may update these Terms. The current
+        version is the one published here with the date above.</p>
+
+        <h2>7. Governing law</h2>
+        <p>These Terms are governed by the laws of the Federal Republic of Germany. Mandatory consumer
+        protection provisions of your country of residence remain unaffected.</p>
+
+        <h2>8. Contact</h2>
+        <p>Questions about these Terms: <strong>dragstore.app@gmx.de</strong></p>
+      </section>
+
+      <!-- ============ DEUTSCH ============ -->
+      <section id="content-de" hidden>
+        <h1>Nutzungsbedingungen</h1>
+        <p class="updated">Stand: 20. Juni 2026</p>
+
+        <p>Diese Nutzungsbedingungen („Bedingungen“) regeln die Nutzung von DragStore („die App“),
+        einer kostenlosen nativen macOS-Anwendung von <strong>Jakob Weczerek</strong> („der
+        Anbieter“). Mit dem Herunterladen, Installieren oder Nutzen der App stimmst du diesen
+        Bedingungen zu. Wenn du nicht zustimmst, nutze die App nicht.</p>
+
+        <h2>1. Leistung</h2>
+        <p>DragStore ist ein kostenloses lokales macOS-Menüleisten-Werkzeug zum Zugriff auf und zur
+        Verwaltung von Dateien in deinem Google Drive (beschränkt auf Dateien und Ordner, die du
+        ausdrücklich freigibst) oder einem lokalen Finder-Ordner. Die App läuft vollständig auf
+        deinem Gerät und kommuniziert direkt mit den Google-APIs; der Anbieter betreibt keine Server
+        und erhält keine deiner Daten.</p>
+
+        <h2>2. Google-Konto und zulässige Nutzung</h2>
+        <p>Für die Google-Drive-Funktionen verbindest du dein eigenes Google-Konto. Du verpflichtest
+        dich, die App nur mit Konten und Daten zu nutzen, zu denen du berechtigt bist, die
+        Google-Bedingungen und geltendes Recht einzuhalten und die App nicht für rechtswidrige oder
+        missbräuchliche Zwecke einzusetzen. Deine Nutzung von Google-Diensten über die App
+        unterliegt zusätzlich den Bedingungen und Richtlinien von Google.</p>
+
+        <h2>3. Deine Daten</h2>
+        <p>Alle Rechte an deinen Dateien und Daten verbleiben bei dir. Die App ist lediglich ein
+        lokales Werkzeug, das die von dir angeforderten Aktionen ausführt. Der Anbieter greift nicht
+        auf deine Daten zu und speichert sie nicht. Details: <a href="index.html">Datenschutzerklärung</a>.</p>
+
+        <h2>4. Gewährleistung</h2>
+        <p>Die App wird „wie besehen“ und „wie verfügbar“ bereitgestellt, ohne Zusicherungen
+        jeglicher Art. Eine ununterbrochene, fehlerfreie Funktion oder das Gelingen einzelner
+        Dateioperationen wird nicht zugesichert. Zwingende gesetzliche Rechte bleiben unberührt.</p>
+
+        <h2>5. Haftung</h2>
+        <p>Der Anbieter haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, nach dem
+        Produkthaftungsgesetz sowie bei Verletzung von Leben, Körper oder Gesundheit. Bei einfacher
+        Fahrlässigkeit haftet der Anbieter nur bei Verletzung einer wesentlichen Vertragspflicht und
+        begrenzt auf den vorhersehbaren, typischen Schaden. Eine weitergehende Haftung ist
+        ausgeschlossen. Für eigene Sicherungen (Backups) deiner wichtigen Daten bist du selbst
+        verantwortlich.</p>
+
+        <h2>6. Änderungen</h2>
+        <p>Der Anbieter kann die App ändern oder einstellen und diese Bedingungen anpassen.
+        Maßgeblich ist die hier veröffentlichte Fassung mit dem oben genannten Stand.</p>
+
+        <h2>7. Anwendbares Recht</h2>
+        <p>Es gilt das Recht der Bundesrepublik Deutschland. Zwingende Verbraucherschutzvorschriften
+        deines gewöhnlichen Aufenthaltsstaats bleiben unberührt.</p>
+
+        <h2>8. Kontakt</h2>
+        <p>Fragen zu diesen Bedingungen: <strong>dragstore.app@gmx.de</strong></p>
+      </section>
+
+    </main>
+
+    <div class="footer-nav">
+      <a href="index.html" data-en="Privacy Policy" data-de="Datenschutzerklärung">Privacy Policy</a>
+      ·
+      <span data-en="Terms of Service" data-de="Nutzungsbedingungen">Terms of Service</span>
+      <div style="margin-top:6px;">© 2026 DragStore</div>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const en = lang === 'en';
+      document.getElementById('content-en').hidden = !en;
+      document.getElementById('content-de').hidden = en;
+      document.getElementById('btn-en').classList.toggle('active', en);
+      document.getElementById('btn-de').classList.toggle('active', !en);
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      try { localStorage.setItem('ds-lang', lang); } catch (e) {}
+    }
+    (function () {
+      let lang = null;
+      try { lang = localStorage.getItem('ds-lang'); } catch (e) {}
+      if (!lang) lang = (navigator.language || 'en').toLowerCase().startsWith('de') ? 'de' : 'en';
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>
