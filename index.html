@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy · DragStore</title>
+  <style>
+    :root {
+      --bg: #e7e7ea;
+      --card: #ffffff;
+      --text: #1f2230;
+      --muted: #5b5f70;
+      --accent: #6366f1;
+      --border: #e2e2e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap; margin-bottom: 28px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand .logo {
+      width: 38px; height: 38px; border-radius: 10px;
+      object-fit: contain; display: block;
+    }
+    .brand .titles { line-height: 1.15; }
+    .brand .titles .app { font-weight: 700; font-size: 18px; }
+    .brand .titles .sub { font-size: 13px; color: var(--muted); }
+    .lang {
+      display: inline-flex; background: #d9d9df; border-radius: 999px; padding: 3px;
+    }
+    .lang button {
+      border: 0; background: transparent; color: var(--muted);
+      font: inherit; font-size: 13px; font-weight: 600;
+      padding: 5px 14px; border-radius: 999px; cursor: pointer;
+    }
+    .lang button.active { background: #fff; color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 36px 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    h1 { font-size: 26px; margin: 0 0 6px; }
+    .updated { color: var(--muted); font-size: 13px; margin: 0 0 26px; }
+    h2 { font-size: 17px; margin: 30px 0 8px; }
+    p, li { color: #303446; font-size: 15px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    code { background: #f1f1f5; padding: 1px 5px; border-radius: 5px; font-size: 13px; }
+    .note { color: var(--muted); font-size: 13px; }
+    @media (max-width: 560px) { .card { padding: 26px 20px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img class="logo" src="icon.png" alt="DragStore" />
+        <div class="titles">
+          <div class="app">DragStore</div>
+          <div class="sub" data-en="Privacy Policy" data-de="Datenschutzerklärung">Privacy Policy</div>
+        </div>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button id="btn-de" onclick="setLang('de')">DE</button>
+      </div>
+    </header>
+
+    <main class="card">
+
+      <!-- ============ ENGLISH ============ -->
+      <section id="content-en">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 20 June 2026</p>
+
+        <p>DragStore (“the App”, “we”, “us”) is a native desktop application for macOS
+        developed by <strong>Jakob Weczerek</strong> (“the Developer”). This policy explains
+        what data the App accesses, how it is used and stored, and your choices.</p>
+
+        <h2>1. Summary — no backend, data stays on your device</h2>
+        <p>DragStore is a <strong>local, client-side application</strong>. We do <strong>not</strong>
+        operate any servers, backend, or database, and we do <strong>not</strong> collect, receive,
+        transmit, or have any access to your data. All tokens, account information, file metadata,
+        and any downloaded content remain <strong>only on your Apple device</strong>. The App
+        communicates <strong>directly and only</strong> with Google’s official APIs.</p>
+
+        <h2>2. Data the App accesses</h2>
+        <p>When you connect a Google account, the App requests the following, solely to provide its
+        features on your device:</p>
+        <ul>
+          <li><strong>Google profile:</strong> your name, email address, and profile picture —
+          used only to show which account is connected.</li>
+          <li><strong>Google Drive (<code>drive.file</code> scope):</strong> the App can access
+          <strong>only</strong> the files and folders that <strong>you explicitly add through the
+          Google Picker</strong> or that the App itself creates. It has <strong>no access</strong>
+          to the rest of your Drive. For those items the App may read metadata (names, sizes,
+          dates, sharing status, thumbnails), read content when you download/preview/drag them out,
+          create/upload, move, rename, delete, and set sharing permissions you choose. It can also
+          read your account’s storage usage to optionally display a storage indicator.</li>
+          <li><strong>Local folder mode:</strong> you may use a folder from Finder instead of Google
+          Drive. In that mode no Google account or Google data is involved.</li>
+        </ul>
+
+        <h2>3. How the data is used</h2>
+        <p>Data accessed through Google APIs is used <strong>exclusively</strong> to provide the
+        user-facing features of the App (browsing, previewing, uploading, downloading, organizing,
+        and sharing your own selected content). We do <strong>not</strong> use it for advertising,
+        do <strong>not</strong> sell it, do <strong>not</strong> use it to train AI/ML models, and
+        no human reads your data.</p>
+
+        <h2>4. How the data is stored</h2>
+        <ul>
+          <li><strong>Authentication tokens</strong> are stored securely in the macOS Keychain on
+          your device.</li>
+          <li><strong>Downloaded or previewed files</strong> are written to a temporary local folder
+          or a destination you choose; temporary files are removed after use.</li>
+          <li><strong>App settings</strong> and the list of items you added are stored in your local
+          macOS user defaults.</li>
+        </ul>
+        <p>We keep no copy of any of this, because we run no servers.</p>
+
+        <h2>5. How the data is shared</h2>
+        <p>We do <strong>not</strong> share your data with anyone, because we never receive it. The
+        only “sharing” that can occur is initiated <strong>explicitly by you</strong> through the
+        App’s Share feature, which changes the sharing settings of your own Drive items via Google’s
+        API — a direct interaction between your device and Google.</p>
+
+        <h2>6. Google API Services User Data Policy (Limited Use)</h2>
+        <p>DragStore’s use and transfer of information received from Google APIs to any other app
+        will adhere to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+        including the <strong>Limited Use</strong> requirements.</p>
+
+        <h2>7. This website</h2>
+        <p>This privacy policy page is hosted on <strong>GitHub Pages</strong> (GitHub, Inc., USA).
+        When you open it, GitHub as the hosting provider automatically processes technically
+        necessary request data in server logs — including your <strong>IP address</strong>, the
+        date and time, the page requested, and your browser type — in order to deliver the page
+        and keep it secure. The legal basis is our legitimate interest in a secure, functioning
+        website (Art. 6(1)(f) GDPR); this involves a transfer to the USA. This site uses
+        <strong>no tracking cookies, no analytics, and no third-party fonts</strong>.</p>
+
+        <h2>8. Automatic updates</h2>
+        <p>The App can check for new versions using <strong>Sparkle</strong>. When it does, it
+        contacts the update feed hosted on <strong>GitHub Pages</strong>, which processes your
+        <strong>IP address</strong>. Optionally — and only if you agree when asked — Sparkle may
+        send <strong>anonymous</strong> system information (e.g. your macOS and app version) to help
+        prioritize fixes. The legal basis is our legitimate interest in keeping the App up to date
+        and secure (Art. 6(1)(f) GDPR); the optional profile is based on your consent
+        (Art. 6(1)(a) GDPR). You can disable update checks in the App’s settings.</p>
+
+        <h2>9. Your choices</h2>
+        <ul>
+          <li>Sign out inside the App at any time (this removes the stored tokens).</li>
+          <li>Revoke access at any time at
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+          <li>Delete the App to remove its locally stored settings and temporary files.</li>
+        </ul>
+
+        <h2>10. Children</h2>
+        <p>DragStore is not directed to children under 16 and we do not knowingly process their data.</p>
+
+        <h2>11. Changes</h2>
+        <p>We may update this policy; the current version is the one published here with the date above.</p>
+
+        <h2>12. Contact</h2>
+        <p>Questions about this policy: <strong>dragstore.app@gmx.de</strong></p>
+      </section>
+
+      <!-- ============ DEUTSCH ============ -->
+      <section id="content-de" hidden>
+        <h1>Datenschutzerklärung</h1>
+        <p class="updated">Stand: 20. Juni 2026</p>
+
+        <p>DragStore („die App“, „wir“) ist eine native Desktop-Anwendung für macOS, entwickelt von
+        <strong>Jakob Weczerek</strong> („der Anbieter“). Diese Erklärung beschreibt, auf welche Daten
+        die App zugreift, wie sie genutzt und gespeichert werden und welche Wahlmöglichkeiten du hast.</p>
+
+        <h2>1. Zusammenfassung — kein Backend, Daten bleiben auf deinem Gerät</h2>
+        <p>DragStore ist eine <strong>lokale Anwendung</strong>. Wir betreiben <strong>keine</strong>
+        Server, kein Backend und keine Datenbank und wir erheben, empfangen oder verarbeiten
+        <strong>keine</strong> deiner Daten. Alle Token, Kontoinformationen, Datei-Metadaten und
+        heruntergeladenen Inhalte verbleiben <strong>ausschließlich auf deinem Apple-Gerät</strong>.
+        Die App kommuniziert <strong>direkt und ausschließlich</strong> mit den offiziellen
+        Google-APIs.</p>
+
+        <h2>2. Welche Daten die App verarbeitet</h2>
+        <p>Wenn du ein Google-Konto verbindest, fragt die App – nur zur Bereitstellung ihrer
+        Funktionen auf deinem Gerät – Folgendes an:</p>
+        <ul>
+          <li><strong>Google-Profil:</strong> Name, E-Mail-Adresse und Profilbild – nur zur Anzeige
+          des verbundenen Kontos.</li>
+          <li><strong>Google Drive (<code>drive.file</code>-Scope):</strong> Die App kann
+          <strong>ausschließlich</strong> auf die Dateien und Ordner zugreifen, die <strong>du
+          aktiv über den Google Picker hinzufügst</strong> oder die die App selbst erstellt. Auf den
+          Rest deines Drives hat sie <strong>keinen Zugriff</strong>. Für diese Objekte kann die App
+          Metadaten lesen (Namen, Größen, Daten, Freigabestatus, Vorschaubilder), Inhalte beim
+          Herunterladen/Vorschauen/Herausziehen lesen, erstellen/hochladen, verschieben, umbenennen,
+          löschen und von dir gewählte Freigaben setzen. Sie kann außerdem die Speicherbelegung
+          deines Kontos lesen, um optional eine Speicheranzeige darzustellen.</li>
+          <li><strong>Lokaler-Ordner-Modus:</strong> Du kannst statt Google Drive einen Finder-Ordner
+          verwenden. In diesem Modus werden keinerlei Google-Daten verarbeitet.</li>
+        </ul>
+
+        <h2>3. Wie die Daten genutzt werden</h2>
+        <p>Die über Google-APIs zugänglichen Daten werden <strong>ausschließlich</strong> zur
+        Bereitstellung der App-Funktionen verwendet (Durchsehen, Vorschau, Hochladen, Herunterladen,
+        Organisieren und Teilen deiner ausgewählten Inhalte). Wir nutzen sie <strong>nicht</strong>
+        für Werbung, verkaufen sie <strong>nicht</strong>, nutzen sie <strong>nicht</strong> zum
+        Training von KI-Modellen, und kein Mensch liest deine Daten.</p>
+
+        <h2>4. Wie die Daten gespeichert werden</h2>
+        <ul>
+          <li><strong>Authentifizierungs-Token</strong> werden sicher im macOS-Schlüsselbund
+          (Keychain) deines Geräts gespeichert.</li>
+          <li><strong>Heruntergeladene/Vorschau-Dateien</strong> landen in einem temporären lokalen
+          Ordner oder an einem von dir gewählten Ziel; temporäre Dateien werden danach entfernt.</li>
+          <li><strong>App-Einstellungen</strong> und die Liste der hinzugefügten Objekte liegen in
+          den lokalen macOS-Benutzereinstellungen.</li>
+        </ul>
+        <p>Wir bewahren davon keine Kopie auf, da wir keine Server betreiben.</p>
+
+        <h2>5. Weitergabe der Daten</h2>
+        <p>Wir geben deine Daten an <strong>niemanden</strong> weiter, da wir sie nie erhalten. Die
+        einzige „Weitergabe“ erfolgt <strong>ausdrücklich durch dich</strong> über die Teilen-Funktion
+        der App, die die Freigabe-Einstellungen deiner eigenen Drive-Objekte über die Google-API
+        ändert – eine direkte Interaktion zwischen deinem Gerät und Google.</p>
+
+        <h2>6. Google API Services User Data Policy (Limited Use)</h2>
+        <p>Die Verwendung und Weitergabe von Informationen, die DragStore über Google-APIs erhält,
+        erfolgt im Einklang mit der
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+        einschließlich der <strong>Limited-Use</strong>-Anforderungen.</p>
+
+        <h2>7. Diese Website</h2>
+        <p>Diese Datenschutzseite wird über <strong>GitHub Pages</strong> (GitHub, Inc., USA)
+        bereitgestellt. Beim Aufruf verarbeitet GitHub als Hosting-Anbieter automatisch technisch
+        notwendige Zugriffsdaten in Server-Logfiles – u. a. deine <strong>IP-Adresse</strong>,
+        Datum und Uhrzeit, die abgerufene Seite und deinen Browsertyp –, um die Seite auszuliefern
+        und sicher zu betreiben. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren,
+        funktionierenden Webauftritt (Art. 6 Abs. 1 lit. f DSGVO); dabei erfolgt eine Übermittlung in
+        die USA. Diese Seite verwendet <strong>keine Tracking-Cookies, kein Analyse-Tool und keine
+        externen Schriftarten</strong>.</p>
+
+        <h2>8. Automatische Updates</h2>
+        <p>Die App kann über <strong>Sparkle</strong> nach neuen Versionen suchen. Dabei kontaktiert
+        sie den Update-Feed, der auf <strong>GitHub Pages</strong> gehostet wird, wobei deine
+        <strong>IP-Adresse</strong> verarbeitet wird. Optional – und nur mit deiner Zustimmung bei
+        der entsprechenden Abfrage – kann Sparkle <strong>anonyme</strong> Systeminformationen
+        (z. B. deine macOS- und App-Version) senden, um Fehlerbehebungen zu priorisieren.
+        Rechtsgrundlage ist unser berechtigtes Interesse daran, die App aktuell und sicher zu halten
+        (Art. 6 Abs. 1 lit. f DSGVO); das optionale Profil beruht auf deiner Einwilligung
+        (Art. 6 Abs. 1 lit. a DSGVO). Update-Prüfungen kannst du in den Einstellungen der App
+        deaktivieren.</p>
+
+        <h2>9. Deine Wahlmöglichkeiten</h2>
+        <ul>
+          <li>Melde dich jederzeit in der App ab (entfernt die gespeicherten Token).</li>
+          <li>Widerrufe den Zugriff jederzeit unter
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+          <li>Lösche die App, um lokale Einstellungen und temporäre Dateien zu entfernen.</li>
+        </ul>
+
+        <h2>10. Kinder</h2>
+        <p>DragStore richtet sich nicht an Kinder unter 16 Jahren; wir verarbeiten wissentlich keine
+        Daten solcher Personen.</p>
+
+        <h2>11. Änderungen</h2>
+        <p>Wir können diese Erklärung anpassen; maßgeblich ist die hier veröffentlichte Fassung mit
+        dem oben genannten Stand.</p>
+
+        <h2>12. Kontakt</h2>
+        <p>Fragen zum Datenschutz: <strong>dragstore.app@gmx.de</strong></p>
+      </section>
+
+    </main>
+    <div class="note" style="text-align:center; margin-top:18px;">
+      <span data-en="Privacy Policy" data-de="Datenschutzerklärung">Privacy Policy</span>
+      ·
+      <a href="terms.html" data-en="Terms of Service" data-de="Nutzungsbedingungen">Terms of Service</a>
+      <div style="margin-top:6px;">© 2026 DragStore</div>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const en = lang === 'en';
+      document.getElementById('content-en').hidden = !en;
+      document.getElementById('content-de').hidden = en;
+      document.getElementById('btn-en').classList.toggle('active', en);
+      document.getElementById('btn-de').classList.toggle('active', !en);
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      try { localStorage.setItem('ds-lang', lang); } catch (e) {}
+    }
+    // Sprache merken oder aus Browser ableiten.
+    (function () {
+      let lang = null;
+      try { lang = localStorage.getItem('ds-lang'); } catch (e) {}
+      if (!lang) lang = (navigator.language || 'en').toLowerCase().startsWith('de') ? 'de' : 'en';
+      setLang(lang);
+    })();
+  </script>
+</body>
+</html>
