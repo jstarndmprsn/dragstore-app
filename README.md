@@ -7,3 +7,5 @@ Download here:
 [<img src="download-macos.svg" alt="Download for macOS" height="80">](https://github.com/jstarndmprsn/dragstore-app/releases/latest/download/DragStore-1.0.2.dmg)
 
 Requires MacOS 14+
+
+<h3>Follow the download instructions included in the .dmg file!<h3>
