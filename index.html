@@ -81,7 +81,7 @@
       <!-- ============ ENGLISH ============ -->
       <section id="content-en">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 20 June 2026</p>
+        <p class="updated">Last updated: 5 July 2026</p>
 
         <p>DragStore (“the App”, “we”, “us”) is a native desktop application for macOS
         developed by <strong>Jakob Weczerek</strong> (“the Developer”). This policy explains
@@ -109,6 +109,11 @@
           read your account’s storage usage to optionally display a storage indicator.</li>
           <li><strong>Local folder mode:</strong> you may use a folder from Finder instead of Google
           Drive. In that mode no Google account or Google data is involved.</li>
+          <li><strong>Smart Folders (on-device AI):</strong> if you enable the optional auto-sort
+          feature, the App reads a small excerpt of a file you drop — its text, PDF text, or, for
+          images, recognized text and general scene labels — to decide which of your folders fits
+          best. This analysis runs <strong>entirely on your Mac</strong> via Apple’s on-device
+          intelligence; no file content, excerpt, or result is ever sent to us or any third party.</li>
         </ul>
 
         <h2>3. How the data is used</h2>
@@ -116,16 +121,25 @@
         user-facing features of the App (browsing, previewing, uploading, downloading, organizing,
         and sharing your own selected content). We do <strong>not</strong> use it for advertising,
         do <strong>not</strong> sell it, do <strong>not</strong> use it to train AI/ML models, and
-        no human reads your data.</p>
+        no human reads your data. The optional Smart Folders feature analyzes your files only on
+        your device to suggest folders; that analysis and its results never leave your Mac.</p>
 
         <h2>4. How the data is stored</h2>
         <ul>
-          <li><strong>Authentication tokens</strong> are stored securely in the macOS Keychain on
-          your device.</li>
+          <li><strong>Authentication tokens</strong> are stored in a protected file inside the App’s
+          local Application Support folder on your device.</li>
           <li><strong>Downloaded or previewed files</strong> are written to a temporary local folder
           or a destination you choose; temporary files are removed after use.</li>
           <li><strong>App settings</strong> and the list of items you added are stored in your local
           macOS user defaults.</li>
+          <li><strong>Smart Folders data</strong> — which folders you chose for auto sort, their
+          optional context notes, and (if enabled) which folders you tend to sort each file type
+          into — is stored in your local macOS user defaults. Learning can be turned off and reset
+          in the App.</li>
+          <li><strong>Optional setup file:</strong> if you enable it, the App saves your Smart
+          Folders setup to a single, clearly-named file (“DragStore Auto-Sort.json”) in your own
+          Google Drive or a local folder you choose, so it can follow you to another Mac. You can
+          optionally encrypt it; it stays in your own storage.</li>
         </ul>
         <p>We keep no copy of any of this, because we run no servers.</p>
 
@@ -210,6 +224,12 @@
           deines Kontos lesen, um optional eine Speicheranzeige darzustellen.</li>
           <li><strong>Lokaler-Ordner-Modus:</strong> Du kannst statt Google Drive einen Finder-Ordner
           verwenden. In diesem Modus werden keinerlei Google-Daten verarbeitet.</li>
+          <li><strong>Intelligente Ordner (lokale KI):</strong> Wenn du die optionale
+          Auto-Sortierung aktivierst, liest die App einen kleinen Ausschnitt einer abgelegten Datei –
+          ihren Text, PDF-Text oder, bei Bildern, erkannten Text und grobe Bildinhalts-Labels –, um
+          den passendsten deiner Ordner zu bestimmen. Diese Analyse läuft <strong>vollständig auf
+          deinem Mac</strong> über Apples geräteinterne KI; kein Dateiinhalt, Ausschnitt oder Ergebnis
+          wird an uns oder Dritte gesendet.</li>
         </ul>
 
         <h2>3. Wie die Daten genutzt werden</h2>
@@ -217,16 +237,27 @@
         Bereitstellung der App-Funktionen verwendet (Durchsehen, Vorschau, Hochladen, Herunterladen,
         Organisieren und Teilen deiner ausgewählten Inhalte). Wir nutzen sie <strong>nicht</strong>
         für Werbung, verkaufen sie <strong>nicht</strong>, nutzen sie <strong>nicht</strong> zum
-        Training von KI-Modellen, und kein Mensch liest deine Daten.</p>
+        Training von KI-Modellen, und kein Mensch liest deine Daten. Die optionale Funktion
+        „Intelligente Ordner“ analysiert deine Dateien nur auf deinem Gerät, um Ordner
+        vorzuschlagen; diese Analyse und ihre Ergebnisse verlassen deinen Mac nie.</p>
 
         <h2>4. Wie die Daten gespeichert werden</h2>
         <ul>
-          <li><strong>Authentifizierungs-Token</strong> werden sicher im macOS-Schlüsselbund
-          (Keychain) deines Geräts gespeichert.</li>
+          <li><strong>Authentifizierungs-Token</strong> werden in einer geschützten Datei im lokalen
+          Application-Support-Ordner der App auf deinem Gerät gespeichert.</li>
           <li><strong>Heruntergeladene/Vorschau-Dateien</strong> landen in einem temporären lokalen
           Ordner oder an einem von dir gewählten Ziel; temporäre Dateien werden danach entfernt.</li>
           <li><strong>App-Einstellungen</strong> und die Liste der hinzugefügten Objekte liegen in
           den lokalen macOS-Benutzereinstellungen.</li>
+          <li><strong>Daten der Intelligenten Ordner</strong> – welche Ordner du für die
+          Auto-Sortierung gewählt hast, deren optionale Kontextnotizen und (falls aktiviert) in
+          welche Ordner du welche Dateitypen sortierst – liegen in den lokalen
+          macOS-Benutzereinstellungen. Das Lernen lässt sich in der App abschalten und zurücksetzen.</li>
+          <li><strong>Optionale Einrichtungsdatei:</strong> Wenn du sie aktivierst, speichert die App
+          deine Einrichtung in einer einzelnen, klar benannten Datei („DragStore Auto-Sort.json“) in
+          deinem eigenen Google Drive oder einem lokalen Ordner deiner Wahl, damit sie dir auf einen
+          anderen Mac folgen kann. Du kannst sie optional verschlüsseln; sie bleibt in deinem eigenen
+          Speicher.</li>
         </ul>
         <p>Wir bewahren davon keine Kopie auf, da wir keine Server betreiben.</p>
 
