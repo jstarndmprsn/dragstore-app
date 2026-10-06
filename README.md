@@ -4,8 +4,8 @@ Dragstore – Google Drive file manager for macOS.
 Download here:
 
 
-[<img src="download-macos.svg" alt="Download for macOS" height="80">](https://github.com/jstarndmprsn/dragstore-app/releases/latest/download/DragStore-2.0.0.dmg)
+[<img src="download-macos.svg" alt="Download for macOS" height="80">](https://github.com/jstarndmprsn/dragstore-app/releases/latest/download/DragStore-2.1.0.dmg)
 
-Requires MacOS 14+
+Requires macOS 14+
 
-<h3>Follow the download instructions included in the .dmg file!<h3>
+<h3>Follow the download instructions included in the .dmg file!</h3>
