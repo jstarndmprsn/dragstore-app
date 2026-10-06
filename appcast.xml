@@ -3,13 +3,37 @@
     <channel>
         <title>DragStore</title>
         <item>
-            <title>2.0.0</title>
-            <pubDate>Sun, 05 Jul 2026 19:16:26 +0200</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <title>2.1.0</title>
+            <pubDate>Tue, 06 Oct 2026 18:52:40 +0200</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            
-            <enclosure url="https://github.com/jstarndmprsn/dragstore-app/releases/download/v2.0.0/DragStore-2.0.0.dmg" length="6385187" type="application/octet-stream" sparkle:edSignature="HS5N+tCv0dv0LgT5l7Oq3voee7IW8q0ZD5R52k5v7Wa24y+r2iHq7x4HQyvM0TmsWQcSAPJlmLGL1lgeosxPCw=="/>
+            <description><![CDATA[<div style="font-family: -apple-system, system-ui, sans-serif; font-size: 13px; color: #222;">
+<h2 style="margin:0 0 6px 0;">DragStore 2.1.0</h2>
+<p style="margin:0 0 12px 0; color:#555;">DragStore now works much more like the Finder and is ready for macOS 27.</p>
+
+<h3 style="margin:14px 0 4px 0;">New</h3>
+<ul style="margin:0 0 10px 18px; padding:0;">
+  <li><b>Finder-style browsing:</b> a click selects files and folders, a double-click opens them. Hold a file over a folder to open it, and drag to the edge of the list to scroll.</li>
+  <li><b>Cancel uploads</b> at any time.</li>
+  <li><b>New + menu</b> to create folders, upload files and add files from Google Drive.</li>
+  <li><b>Shortcuts and Spotlight</b> actions: open DragStore, upload files, auto-sort files*.</li>
+  <li><b>Redesigned Smart Folders settings</b>*, now right inside Settings.</li>
+</ul>
+
+<h3 style="margin:14px 0 4px 0;">Bug fixes and improvements</h3>
+<ul style="margin:0 0 10px 18px; padding:0;">
+  <li>Uploads and auto sort no longer fail silently, for example right after launch or when signed out. You now get a short message instead.</li>
+  <li>Smart folders stay in place when you rename or move them, and deleted folders are no longer used*.</li>
+  <li>More reliable "Add from Google Drive".</li>
+  <li>Smoother animations and clearer error messages.</li>
+  <li>Temporary files are cleaned up automatically.</li>
+</ul>
+
+<p style="margin:12px 0 0 0; color:#777; font-size: 11px;">* requires macOS 26 or later and a Mac with an Apple Chip</p>
+</div>
+]]></description>
+            <enclosure url="https://github.com/jstarndmprsn/dragstore-app/releases/download/v2.1.0/DragStore-2.1.0.dmg" length="6936328" type="application/octet-stream" sparkle:edSignature="Ru+6eCv+5SJcs68JlFVsQEyOjVIgQLktAlnrf3zuC77MVDUjA/7bmznxWn2F6n7sohbhR+psyGQTuFQ0Zvt7BA=="/>
         </item>
     </channel>
 </rss>
