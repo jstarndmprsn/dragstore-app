@@ -81,7 +81,7 @@
       <!-- ============ ENGLISH ============ -->
       <section id="content-en">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 5 July 2026</p>
+        <p class="updated">Last updated: 6 October 2026</p>
 
         <p>DragStore (“the App”, “we”, “us”) is a native desktop application for macOS
         developed by <strong>Jakob Weczerek</strong> (“the Developer”). This policy explains
@@ -107,6 +107,11 @@
           dates, sharing status, thumbnails), read content when you download/preview/drag them out,
           create/upload, move, rename, delete, and set sharing permissions you choose. It can also
           read your account’s storage usage to optionally display a storage indicator.</li>
+          <li><strong>Adding files from Drive (Google Picker):</strong> to let you choose files, the
+          App opens Google’s File Picker in your web browser through a temporary page that is
+          served <strong>only on your own Mac</strong> (<code>127.0.0.1</code>, not reachable from
+          other devices). Your Google access token is used in that page only to talk to Google, and
+          the page stops as soon as you are done.</li>
           <li><strong>Local folder mode:</strong> you may use a folder from Finder instead of Google
           Drive. In that mode no Google account or Google data is involved.</li>
           <li><strong>Smart Folders (on-device AI):</strong> if you enable the optional auto-sort
@@ -114,6 +119,10 @@
           images, recognized text and general scene labels — to decide which of your folders fits
           best. This analysis runs <strong>entirely on your Mac</strong> via Apple’s on-device
           intelligence; no file content, excerpt, or result is ever sent to us or any third party.</li>
+          <li><strong>Shortcuts, Siri and Spotlight:</strong> if you use DragStore’s actions there,
+          the files you pass are handled like a drag and drop — uploaded to your active source or
+          offered for auto sort. If needed, they are first copied to a private temporary folder on
+          your Mac.</li>
         </ul>
 
         <h2>3. How the data is used</h2>
@@ -128,8 +137,10 @@
         <ul>
           <li><strong>Authentication tokens</strong> are stored in a protected file inside the App’s
           local Application Support folder on your device.</li>
-          <li><strong>Downloaded or previewed files</strong> are written to a temporary local folder
-          or a destination you choose; temporary files are removed after use.</li>
+          <li><strong>Temporary files</strong> — files downloaded for a preview or while you drag
+          them out, and files handed over by Shortcuts — are kept in a private temporary folder on
+          your Mac and deleted after use, at the latest when the App quits or starts the next time.
+          Files you drag out are saved where you drop them.</li>
           <li><strong>App settings</strong> and the list of items you added are stored in your local
           macOS user defaults.</li>
           <li><strong>Smart Folders data</strong> — which folders you chose for auto sort, their
@@ -181,20 +192,30 @@
           <li>Delete the App to remove its locally stored settings and temporary files.</li>
         </ul>
 
-        <h2>10. Children</h2>
+        <h2>10. Your rights</h2>
+        <p>Under the GDPR you have the right of access, rectification, erasure, restriction of
+        processing, data portability and the right to object (Art. 15–21 GDPR), and you can withdraw
+        any consent at any time with effect for the future (Art. 7(3) GDPR). Because DragStore runs
+        no servers, we hold no personal data about you: data in your Google account is managed by
+        Google, and the request data of this website by GitHub. You can still contact us at any time
+        (see Contact). You also have the right to lodge a complaint with a data protection
+        supervisory authority, in particular in the EU member state of your habitual residence
+        (Art. 77 GDPR).</p>
+
+        <h2>11. Children</h2>
         <p>DragStore is not directed to children under 16 and we do not knowingly process their data.</p>
 
-        <h2>11. Changes</h2>
+        <h2>12. Changes</h2>
         <p>We may update this policy; the current version is the one published here with the date above.</p>
 
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <p>Questions about this policy: <strong>dragstore.app@gmx.de</strong></p>
       </section>
 
       <!-- ============ DEUTSCH ============ -->
       <section id="content-de" hidden>
         <h1>Datenschutzerklärung</h1>
-        <p class="updated">Stand: 20. Juni 2026</p>
+        <p class="updated">Stand: 6. Oktober 2026</p>
 
         <p>DragStore („die App“, „wir“) ist eine native Desktop-Anwendung für macOS, entwickelt von
         <strong>Jakob Weczerek</strong> („der Anbieter“). Diese Erklärung beschreibt, auf welche Daten
@@ -222,6 +243,11 @@
           Herunterladen/Vorschauen/Herausziehen lesen, erstellen/hochladen, verschieben, umbenennen,
           löschen und von dir gewählte Freigaben setzen. Sie kann außerdem die Speicherbelegung
           deines Kontos lesen, um optional eine Speicheranzeige darzustellen.</li>
+          <li><strong>Hinzufügen aus Drive (Google Picker):</strong> Damit du Dateien auswählen
+          kannst, öffnet die App Googles Dateiauswahl in deinem Webbrowser über eine temporäre Seite,
+          die <strong>nur auf deinem eigenen Mac</strong> bereitgestellt wird (<code>127.0.0.1</code>,
+          von anderen Geräten nicht erreichbar). Dein Google-Zugriffstoken wird dort ausschließlich
+          für die Kommunikation mit Google verwendet; die Seite wird beendet, sobald du fertig bist.</li>
           <li><strong>Lokaler-Ordner-Modus:</strong> Du kannst statt Google Drive einen Finder-Ordner
           verwenden. In diesem Modus werden keinerlei Google-Daten verarbeitet.</li>
           <li><strong>Intelligente Ordner (lokale KI):</strong> Wenn du die optionale
@@ -230,6 +256,10 @@
           den passendsten deiner Ordner zu bestimmen. Diese Analyse läuft <strong>vollständig auf
           deinem Mac</strong> über Apples geräteinterne KI; kein Dateiinhalt, Ausschnitt oder Ergebnis
           wird an uns oder Dritte gesendet.</li>
+          <li><strong>Kurzbefehle, Siri und Spotlight:</strong> Wenn du dort die Aktionen von
+          DragStore verwendest, werden die übergebenen Dateien wie bei Drag &amp; Drop behandelt – in
+          deine aktive Quelle hochgeladen oder zur automatischen Sortierung angeboten. Falls nötig,
+          werden sie dafür zuerst in einen privaten temporären Ordner auf deinem Mac kopiert.</li>
         </ul>
 
         <h2>3. Wie die Daten genutzt werden</h2>
@@ -245,8 +275,11 @@
         <ul>
           <li><strong>Authentifizierungs-Token</strong> werden in einer geschützten Datei im lokalen
           Application-Support-Ordner der App auf deinem Gerät gespeichert.</li>
-          <li><strong>Heruntergeladene/Vorschau-Dateien</strong> landen in einem temporären lokalen
-          Ordner oder an einem von dir gewählten Ziel; temporäre Dateien werden danach entfernt.</li>
+          <li><strong>Temporäre Dateien</strong> – für eine Vorschau oder beim Herausziehen
+          heruntergeladene Dateien sowie von Kurzbefehlen übergebene Dateien – liegen in einem
+          privaten temporären Ordner auf deinem Mac und werden nach Gebrauch gelöscht, spätestens
+          beim Beenden oder nächsten Start der App. Herausgezogene Dateien werden dort gespeichert,
+          wo du sie ablegst.</li>
           <li><strong>App-Einstellungen</strong> und die Liste der hinzugefügten Objekte liegen in
           den lokalen macOS-Benutzereinstellungen.</li>
           <li><strong>Daten der Intelligenten Ordner</strong> – welche Ordner du für die
@@ -302,15 +335,25 @@
           <li>Lösche die App, um lokale Einstellungen und temporäre Dateien zu entfernen.</li>
         </ul>
 
-        <h2>10. Kinder</h2>
+        <h2>10. Deine Rechte</h2>
+        <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+        Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO) und kannst eine
+        Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO). Da
+        DragStore keine Server betreibt, speichern wir keine personenbezogenen Daten über dich:
+        Daten in deinem Google-Konto verwaltet Google, die Zugriffsdaten dieser Website GitHub. Du
+        kannst uns trotzdem jederzeit kontaktieren (siehe Kontakt). Außerdem hast du das Recht, dich
+        bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Mitgliedstaat
+        deines gewöhnlichen Aufenthalts (Art. 77 DSGVO).</p>
+
+        <h2>11. Kinder</h2>
         <p>DragStore richtet sich nicht an Kinder unter 16 Jahren; wir verarbeiten wissentlich keine
         Daten solcher Personen.</p>
 
-        <h2>11. Änderungen</h2>
+        <h2>12. Änderungen</h2>
         <p>Wir können diese Erklärung anpassen; maßgeblich ist die hier veröffentlichte Fassung mit
         dem oben genannten Stand.</p>
 
-        <h2>12. Kontakt</h2>
+        <h2>13. Kontakt</h2>
         <p>Fragen zum Datenschutz: <strong>dragstore.app@gmx.de</strong></p>
       </section>
 
